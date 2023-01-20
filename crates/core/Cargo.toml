@@ -1,0 +1,15 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+next-binding = { git = "https://github.com/vercel/turbo.git", tag = "turbopack-220120.1", features = [
+  "__swc_core",
+  "__swc_core_next_core",
+  "__swc_transform_styled_jsx",
+  "__swc_transform_emotion",
+  "__swc_transform_styled_components",
+  "__swc_transform_modularize_imports",
+  "__turbo_native_tls"
+] }

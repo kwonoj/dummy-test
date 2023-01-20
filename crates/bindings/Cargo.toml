@@ -1,0 +1,12 @@
+[package]
+name = "bindings"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+next-binding = { git = "https://github.com/vercel/turbo.git", tag = "turbopack-220120.1", features = [
+  "__swc_core_binding_napi",
+  "__turbo_next_dev_server",
+  "__turbo_node_file_trace",
+  "__feature_mdx_rs",
+] }
